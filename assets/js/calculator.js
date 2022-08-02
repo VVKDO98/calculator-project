@@ -11,7 +11,7 @@ const calculator = `
             <span data-key="100" class="calc__numb">4</span>
             <span data-key="101" class="calc__numb">5</span>
             <span data-key="102" class="calc__numb">6</span>
-            <span data-key="106" class="calc__numb calc__numb--op">x</span>
+            <span data-key="106" class="calc__numb calc__numb--op">*</span>
             <span data-key="97" class="calc__numb">1</span>
             <span data-key="98" class="calc__numb">2</span>
             <span data-key="99" class="calc__numb">3</span>
@@ -49,7 +49,6 @@ const calculate = (value) => {
         const calcul = eval(screenResult.textContent);
         screenResult.textContent = calcul;
         break;
-      //case "110"
       default:
         const indexKeycode = listKeycode.indexOf(value);
         const touche = touches[indexKeycode];
