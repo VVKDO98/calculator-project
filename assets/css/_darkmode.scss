@@ -11,18 +11,22 @@ body.dark {
         color: white;
       }
     }
-    .calc__numb {
-      color: white;
-      background-color: $colorNumDark;
-      box-shadow: $shadowdark;
-      &--op {
-        background-color: #414141;
-      }
-      &--ac {
-        background-color: #414141;
-      }
-      &--equ {
-        background-color: #171717;
+    .calculator__bot {
+      .bot__row {
+        .calc__numb {
+          color: white;
+          background-color: $colorNumDark;
+          box-shadow: $shadowdark;
+          &--op {
+            background-color: #414141;
+          }
+          &--ac {
+            background-color: #414141;
+          }
+          &--equ {
+            background-color: #171717;
+          }
+        }
       }
     }
   }

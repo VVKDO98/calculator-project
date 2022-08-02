@@ -328,18 +328,18 @@ body.dark .calculator .calculator__top {
 body.dark .calculator .calculator__top .calc__result {
   color: white;
 }
-body.dark .calculator .calc__numb {
+body.dark .calculator .calculator__bot .bot__row .calc__numb {
   color: white;
   background-color: rgb(27, 27, 27);
   box-shadow: 0px 5px 15px rgba(17, 17, 17, 0.25);
 }
-body.dark .calculator .calc__numb--op {
+body.dark .calculator .calculator__bot .bot__row .calc__numb--op {
   background-color: #414141;
 }
-body.dark .calculator .calc__numb--ac {
+body.dark .calculator .calculator__bot .bot__row .calc__numb--ac {
   background-color: #414141;
 }
-body.dark .calculator .calc__numb--equ {
+body.dark .calculator .calculator__bot .bot__row .calc__numb--equ {
   background-color: #171717;
 }
 
