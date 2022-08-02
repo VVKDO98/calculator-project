@@ -482,6 +482,7 @@ body {
   background-color: #eaeaea;
 }
 .calculator .calculator__bot div .calc__numb--ac:hover {
+  color: white;
   background-color: #8c2278;
 }
 .calculator .calculator__bot div .calc__numb--equ {
