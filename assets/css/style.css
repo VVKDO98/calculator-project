@@ -333,14 +333,26 @@ body.dark .calculator .calculator__bot .bot__row .calc__numb {
   background-color: rgb(27, 27, 27);
   box-shadow: 0px 5px 15px rgba(17, 17, 17, 0.25);
 }
+body.dark .calculator .calculator__bot .bot__row .calc__numb:hover {
+  background-color: #7675d9;
+}
 body.dark .calculator .calculator__bot .bot__row .calc__numb--op {
   background-color: #414141;
+}
+body.dark .calculator .calculator__bot .bot__row .calc__numb--op:hover {
+  background-color: #7ad95f;
 }
 body.dark .calculator .calculator__bot .bot__row .calc__numb--ac {
   background-color: #414141;
 }
+body.dark .calculator .calculator__bot .bot__row .calc__numb--ac:hover {
+  background-color: #8c2278;
+}
 body.dark .calculator .calculator__bot .bot__row .calc__numb--equ {
   background-color: #171717;
+}
+body.dark .calculator .calculator__bot .bot__row .calc__numb--equ:hover {
+  background-color: #7ad95f;
 }
 
 .darkmode {

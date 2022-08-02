@@ -17,14 +17,26 @@ body.dark {
           color: white;
           background-color: $colorNumDark;
           box-shadow: $shadowdark;
+          &:hover {
+            background-color: #7675d9;
+          }
           &--op {
             background-color: #414141;
+            &:hover {
+              background-color: $colorOpe;
+            }
           }
           &--ac {
             background-color: #414141;
+            &:hover {
+              background-color: $colorAC;
+            }
           }
           &--equ {
             background-color: #171717;
+            &:hover {
+              background-color: $colorOpe;
+            }
           }
         }
       }
