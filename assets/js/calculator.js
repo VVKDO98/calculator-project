@@ -1,12 +1,11 @@
-window.addEventListener("load", (event) => {
-  const calculator = `
+const calculator = `
     <main class="calculator">
         <div class="calculator__top">
-            <span class="calc__result">0</span>
+            <span class="calc__result"></span>
         </div>
         <div class="calculator__bot">
             <span data-key="103" class="calc__numb">7</span>
-            <span data-key="98" class="calc__numb">8</span>
+            <span data-key="104" class="calc__numb">8</span>
             <span data-key="105" class="calc__numb">9</span>
             <span data-key="111" class="calc__numb calc__numb--op">/</span>
             <span data-key="100" class="calc__numb">4</span>
@@ -24,8 +23,41 @@ window.addEventListener("load", (event) => {
             <span data-key="13" class="calc__numb calc__numb--equ">=</span>
         </div>
     </main>`;
-  document.querySelector("body").insertAdjacentHTML("afterbegin", calculator);
-});
+document.querySelector("body").insertAdjacentHTML("afterbegin", calculator);
 
 const touches = [...document.querySelectorAll(".calc__numb")];
-console.log(touches);
+const listKeycode = touches.map((touche) => touche.dataset.key);
+const screenResult = document.querySelector(".calc__result");
+
+document.addEventListener("keydown", (e) => {
+  const value = e.keyCode.toString();
+  calculate(value);
+});
+
+document.addEventListener("click", (e) => {
+  const value = e.target.dataset.key;
+  calculate(value);
+});
+
+const calculate = (value) => {
+  if (listKeycode.includes(value)) {
+    switch (value) {
+      case "8":
+        screenResult.textContent = "";
+        break;
+      case "13":
+        const calcul = eval(screenResult.textContent);
+        screenResult.textContent = calcul;
+        break;
+      //case "110"
+      default:
+        const indexKeycode = listKeycode.indexOf(value);
+        const touche = touches[indexKeycode];
+        screenResult.textContent += touche.innerHTML;
+    }
+  }
+};
+
+window.addEventListener("error", (e) => {
+  alert("Something wrong : " + e.message);
+});
