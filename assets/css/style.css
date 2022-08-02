@@ -350,8 +350,8 @@ body.dark .calculator .calc__numb--equ {
 }
 @media screen and (max-width: 480px) {
   .darkmode {
-    bottom: 25px;
-    right: 25px;
+    bottom: 10px;
+    right: 10px;
   }
 }
 
