@@ -39,41 +39,45 @@ body {
     width: 80%;
     margin: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .calc__numb {
-      width: 22%;
-      height: 10%;
-      margin: 5px;
-      color: #3c3c3c;
-      background-color: white;
-      box-shadow: $shadowlight;
-      border-radius: 15px;
+    flex-direction: column;
+    div {
+      height: 20%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.2s ease;
-      &:hover {
-        background-color: #7675d9;
-        transform: scale(0.95);
-      }
-      &--op {
-        background-color: #eaeaea;
+      flex-direction: row;
+      .calc__numb {
+        width: 22%;
+        height: 60%;
+        margin: 5px;
+        color: #3c3c3c;
+        background-color: white;
+        box-shadow: $shadowlight;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease;
         &:hover {
-          background-color: $colorOpe;
+          background-color: #7675d9;
+          transform: scale(0.95);
         }
-      }
-      &--ac {
-        background-color: #eaeaea;
-        &:hover {
-          background-color: $colorAC;
+        &--op {
+          background-color: #eaeaea;
+          &:hover {
+            background-color: $colorOpe;
+          }
         }
-      }
-      &--equ {
-        width: 100%;
-        background-color: #bababa;
-        &:hover {
-          background-color: $colorOpe;
+        &--ac {
+          background-color: #eaeaea;
+          &:hover {
+            background-color: $colorAC;
+          }
+        }
+        &--equ {
+          width: 100%;
+          background-color: #bababa;
+          &:hover {
+            background-color: $colorOpe;
+          }
         }
       }
     }
