@@ -317,14 +317,14 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 .calculator {
   width: 480px;
   height: 800px;
   margin: auto;
-  background-color: #fcfcfc;
+  background-color: #ffffff;
   box-shadow: 0px 5px 15px rgba(218, 218, 218, 0.25);
   border-radius: 30px;
   display: flex;
@@ -336,7 +336,7 @@ body {
   height: 20%;
   width: 80%;
   margin: auto;
-  background-color: white;
+  background-color: #eaeaea;
   box-shadow: 0px 5px 15px rgba(218, 218, 218, 0.25);
   border-radius: 15px;
   display: flex;
@@ -344,6 +344,7 @@ body {
   align-items: flex-end;
 }
 .calculator .calculator__top .calc__result {
+  color: #3c3c3c;
   margin: auto 30px 20px auto;
 }
 .calculator .calculator__bot {
@@ -358,28 +359,39 @@ body {
   width: 22%;
   height: 10%;
   margin: 5px;
-  color: #468ef3;
+  color: #3c3c3c;
   background-color: white;
   box-shadow: 0px 5px 15px rgba(218, 218, 218, 0.25);
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.1s;
 }
 .calculator .calculator__bot .calc__numb--op {
   color: white;
-  background-color: #377f79;
+  background-color: #eaeaea;
+  transition: background-color 0.2s ease 0s;
+}
+.calculator .calculator__bot .calc__numb--op:hover {
+  background-color: #7ad95f;
 }
 .calculator .calculator__bot .calc__numb--ac {
   color: white;
-  background-color: #eb2a46;
+  background-color: #eaeaea;
+  transition: background-color 0.2s ease 0s;
+}
+.calculator .calculator__bot .calc__numb--ac:hover {
+  background-color: #8c2278;
 }
 .calculator .calculator__bot .calc__numb--equ {
   width: 100%;
   color: white;
-  background-color: #fad716;
+  background-color: #bababa;
+  transition: background-color 0.2s ease 0s;
+}
+.calculator .calculator__bot .calc__numb--equ:hover {
+  background-color: #7ad95f;
 }
 .calculator .calculator__bot .calc__numb:hover {
-  transform: scale(1.1);
+  transform: scale(0.95);
 }/*# sourceMappingURL=style.css.map */
