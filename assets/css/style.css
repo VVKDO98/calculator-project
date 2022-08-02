@@ -348,6 +348,12 @@ body.dark .calculator .calc__numb--equ {
   bottom: 50px;
   right: 50px;
 }
+@media screen and (max-width: 480px) {
+  .darkmode {
+    bottom: 25px;
+    right: 25px;
+  }
+}
 
 .checkbox {
   opacity: 0;
@@ -468,4 +474,9 @@ body {
 }
 .calculator .calculator__bot .calc__numb--equ:hover {
   background-color: #7ad95f;
+}
+@media screen and (max-width: 480px) {
+  .calculator {
+    border-radius: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
