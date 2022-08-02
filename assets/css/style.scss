@@ -1,7 +1,8 @@
-@import "normalize", "variables", "fonts";
+@import "normalize", "variables", "fonts", "darkmode";
 
 body {
   height: 100vh;
+  position: relative;
   display: flex;
   align-items: center;
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
@@ -12,7 +13,7 @@ body {
   height: 800px;
   margin: auto;
   background-color: $colorBG;
-  box-shadow: 0px 5px 15px rgba(218, 218, 218, 0.25);
+  box-shadow: $shadowlight;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@ body {
     width: 80%;
     margin: auto;
     background-color: #eaeaea;
-    box-shadow: 0px 5px 15px rgba(218, 218, 218, 0.25);
+    box-shadow: $shadowlight;
     border-radius: 15px;
     display: flex;
     justify-content: flex-end;
@@ -46,38 +47,34 @@ body {
       margin: 5px;
       color: #3c3c3c;
       background-color: white;
-      box-shadow: 0px 5px 15px rgba(218, 218, 218, 0.25);
+      box-shadow: $shadowlight;
       border-radius: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: #7675d9;
+        transform: scale(0.95);
+      }
       &--op {
-        color: white;
         background-color: #eaeaea;
-        transition: background-color 0.2s ease 0s;
         &:hover {
           background-color: $colorOpe;
         }
       }
       &--ac {
-        color: white;
         background-color: #eaeaea;
-        transition: background-color 0.2s ease 0s;
         &:hover {
           background-color: $colorAC;
         }
       }
       &--equ {
         width: 100%;
-        color: white;
         background-color: #bababa;
-        transition: background-color 0.2s ease 0s;
         &:hover {
           background-color: $colorOpe;
         }
-      }
-      &:hover {
-        transform: scale(0.95);
       }
     }
   }

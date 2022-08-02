@@ -1,0 +1,76 @@
+body.dark {
+  background: $bodyDark;
+  background-blend-mode: multiply;
+  .calculator {
+    background-color: $colorBGDark;
+    box-shadow: $shadowdark;
+    .calculator__top {
+      background-color: #414141;
+      box-shadow: $shadowdark;
+      .calc__result {
+        color: white;
+      }
+    }
+    .calc__numb {
+      color: white;
+      background-color: $colorNumDark;
+      box-shadow: $shadowdark;
+      &--op {
+        background-color: #414141;
+      }
+      &--ac {
+        background-color: #414141;
+      }
+      &--equ {
+        background-color: #171717;
+      }
+    }
+  }
+}
+
+.darkmode {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  height: 26px;
+  width: 50px;
+  box-sizing: border-box;
+}
+
+.ball {
+  background-color: white;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translate(24px);
+}
+
+.fa-moon {
+  color: white;
+}
+
+.fa-bolt-lightning {
+  color: #ffc600;
+}

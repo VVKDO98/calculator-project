@@ -1,4 +1,13 @@
+//Body
+$bodyDark: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+  linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+//Calculator
 $colorBG: #ffffff;
+$colorBGDark: #2a2a2a;
 $colorAC: #8c2278;
 $colorOpe: #7ad95f;
-$colorNum: #468ef3;
+$colorNumDark: rgb(27, 27, 27);
+
+//Shadow
+$shadowlight: 0px 5px 15px rgba(218, 218, 218, 0.25);
+$shadowdark: 0px 5px 15px rgba(17, 17, 17, 0.25);

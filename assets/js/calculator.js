@@ -60,3 +60,10 @@ const calculate = (value) => {
 window.addEventListener("error", (e) => {
   alert("Something wrong : " + e.message);
 });
+
+//Darkmode
+
+const checkbox = document.getElementById("checkbox");
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+});
