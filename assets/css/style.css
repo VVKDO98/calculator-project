@@ -456,7 +456,7 @@ body {
   flex-direction: row;
 }
 .calculator .calculator__bot div .calc__numb {
-  width: 22%;
+  width: 25%;
   height: 60%;
   margin: 5px;
   color: #3c3c3c;
