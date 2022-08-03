@@ -56,8 +56,10 @@ const calculate = (value) => {
         screenResult.textContent = "";
         break;
       case "13":
-        const calcul = eval(screenResult.textContent);
-        screenResult.textContent = calcul;
+        const computeResult = (str) => {
+          return Function("return " + str)();
+        };
+        screenResult.textContent = computeResult(screenResult.textContent);
         break;
       default:
         const indexKeycode = listKeycode.indexOf(value);
