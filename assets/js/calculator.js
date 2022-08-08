@@ -1,3 +1,4 @@
+//Generation of the calculator
 const calculator = `
     <main class="calculator">
         <div class="calculator__top">
@@ -33,12 +34,15 @@ const calculator = `
           </div>
         </div>
     </main>`;
+//Insert the calculator
 document.querySelector("body").insertAdjacentHTML("afterbegin", calculator);
 
+//Get const
 const touches = [...document.querySelectorAll(".calc__numb")];
 const listKeycode = touches.map((touche) => touche.dataset.key);
 const screenResult = document.querySelector(".calc__result");
 
+//Event key down and click on the calculator
 document.addEventListener("keydown", (e) => {
   const value = e.keyCode.toString();
   calculate(value);
@@ -49,6 +53,7 @@ document.addEventListener("click", (e) => {
   calculate(value);
 });
 
+//Function that calculate
 const calculate = (value) => {
   if (listKeycode.includes(value)) {
     switch (value) {
@@ -69,12 +74,12 @@ const calculate = (value) => {
   }
 };
 
+//If there is an error
 window.addEventListener("error", (e) => {
   alert("Something wrong : " + e.message);
 });
 
 //Darkmode
-
 const checkbox = document.getElementById("checkbox");
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark");
